@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Playlists Musicais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="conteiner-principal" class="conteiner">
+
+        <div id="painel-cadastro" class="painel">
+            <h2>Cadastrar Nova Playlist</h2>
+            <form id="formulario-playlist">
+
+                <div class="formulario">
+                    <label for="nome-playlist">
+                        Nome da Playlist:
+                    </label>
+                    <input type="text" id="nome-playlist" placeholder="Digite o nome da playlist" required>
+                </div>
+
+                <div class="formulario">
+
+                    <label for="genero"> Gênero Predominante:</label>
+
+                    <select id="genero" required>
+
+                        <option value="">Selecione...</option>
+                        <option value="K_POP"> K-Pop </option>
+                        <option value="TRAP">Trap</option>
+                        <option value="ROCK">Rock</option>
+                        <option value="MPB">MPB</option>
+
+                    </select>
+
+                </div>
+
+                <div class="formulario">
+
+                    <label for="quantidade-musicas">
+                        Quantidade de Músicas:
+                    </label>
+
+                    <input type="number" id="quantidade-musicas" min="1" placeholder="Ex: 20" required>
+                </div>
+
+                <div class="formulario">
+
+                    <label for="plataforma">
+                        Plataforma:
+                    </label>
+
+                    <select id="plataforma" required>
+
+                        <option value="">
+                            Selecione...
+                        </option>
+
+                        <option value="SPOTIFY">
+                            Spotify
+                        </option>
+
+                        <option value="DEEZER">
+                            Deezer
+                        </option>
+
+                        <option value="APPLE_MUSIC">
+                            Apple Music
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div id="mensagem-erro" class="erro"></div>
+
+                <button type="submit">
+                    Cadastrar Playlist
+                </button>
+            </form>
+        </div>
+
+        <div id="painel-listagem" class="painel-direito">
+            <h2>Playlists Cadastradas</h2>
+
+            <div id="lista-playlists">
+
+                <p class="mensagem-vazia">
+                    Nenhuma playlist cadastrada  </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

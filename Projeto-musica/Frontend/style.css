@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 35px;
+    background-image: url("https://i.pinimg.com/originals/0e/ef/98/0eef981ba99f4f099d75d6ba070598f7.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.conteiner {
+    display: flex;
+    gap: 30px;
+    max-width: 1250px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.painel,
+.painel-direito {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 450px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    border-bottom: 3px solid #3abc68;
+    padding-bottom: 12px;
+    display: inline-block;
+    font-family: "Caveat", cursive;
+}
+
+.formulario {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+input,
+select {
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #282828;
+    color: #ffffff;
+    font-size: 1.05rem;
+    min-height: 52px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #5aee64;
+    box-shadow: 0 0 8px rgba(29, 185, 84, 0.35);
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 17px;
+    background-color: #3abc68;
+    color: #000000;
+    border: none;
+    border-radius: 28px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1ed760;
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.erro {
+    color: #fb6262;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.mensagem-vazia {
+    color: #b3b3b3;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px dashed #333;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.cartao-playlist {
+    background-color: #282828;
+    border: 1px solid #333;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 18px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.cartao-playlist:hover {
+    transform: translateY(-2px);
+    border-color: #3abc68;
+}
+
+.info-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.info-principal h3 {
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.tag-plataforma {
+    background-color: #3abc68;
+    color: #000000;
+    padding: 7px 14px;
+    border-radius: 18px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.acoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.acoes button {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
+.acoes button:first-child {
+    background-color: #2f8e31ee;
+    color: white;
+}
+
+.acoes button:first-child:hover {
+    background-color: #0d6212;
+    transform: scale(1.05);
+}
+
+.acoes button:last-child {
+    background-color: #a03e33;
+    color: white;
+}
+
+.acoes button:last-child:hover {
+    background-color: #7b150a;
+    transform: scale(1.05);
+}
